@@ -1,0 +1,8 @@
+<h2>Tracks Index</h2>
+<% @tracks.each do |track| %>
+	<p>
+	<%= link_to track.title, track %>
+	</p>
+
+<% end %>
+<a href="/tracks/new">Create Track</a>

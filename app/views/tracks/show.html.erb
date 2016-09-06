@@ -1,0 +1,12 @@
+<p>
+	Title: <%= @track.title %>
+</p>
+<p>
+	Artist: <%= @track.artist_name %>
+		<%= "Unknown" if @track.artist_name.blank? %>
+</p>
+<p>
+	Length: <%= @track.length %>
+</p>
+
+<%= link_to "View Index", tracks_path %>
